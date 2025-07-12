@@ -1,0 +1,67 @@
+body {
+    font-family: 'Nunito', Arial, sans-serif;
+    background: #f4f3ef;
+    color: #3c4257;
+    margin: 0;
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+.logo {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+}
+
+.card {
+    background: #fff;
+    border-radius: 30px;
+    box-shadow: 0 2px 16px rgba(60, 66, 87, 0.09);
+    padding: 2.2rem;
+    margin-bottom: 2rem;
+    position: relative;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.card:hover,
+.card:focus-within {
+    box-shadow: 0 6px 32px rgba(60, 66, 87, 0.17);
+    transform: translateY(-5px) scale(1.03);
+}
+
+.card-gradient {
+    background: linear-gradient(135deg, #f2e9e4 0%, #fff 100%);
+}
+
+.cta-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #c9ada7 0%, #4a4e69 100%);
+    color: #fff;
+    padding: 0.8rem 2.4rem;
+    border-radius: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    margin-top: 1.3rem;
+    box-shadow: 0 2px 12px rgba(77, 90, 220, 0.08);
+    transition: background 0.2s, transform 0.2s;
+    border: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+.cta-btn:hover,
+.cta-btn:focus {
+    background: linear-gradient(90deg, #4a4e69 0%, #c9ada7 100%);
+    transform: scale(1.08) translateY(-4px);
+    outline: none;
+}
+
+@media (max-width:900px) {
+    main {
+        max-width: 98vw;
+        padding: 0 0.5rem;
+    }
+    .card {
+        padding: 1.1rem;
+    }
+}
